@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandan - Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(20, 20, 64);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(163, 163, 231);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            height: 50px 0;
+        }
+
+        .purple {
+            color: rgb(171, 99, 237);
+        }
+        .text-gray{
+            color: gray;
+        }
+
+        #element {
+            color: rgb(171, 99, 250);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 85vh;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: -9px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>>
+        <nav>
+            <div class="left">Chandan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple">Chandan Upadhayay</span>
+                <div>and I am </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="develope (3).webp" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                 <div class="vertical">
+                    <img class="image-top" src="developer1.png" alt="">
+                    <div class="vertical-title">
+                        HTMl Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        I am web developer and i am also a Student
+                        of computer science student 
+                    </div>
+                    
+                    
+                 </div>
+                 <div class="vertical">
+                    
+                        Node.js Developer (2012-2014)
+                
+                 </div>
+                 <div class="vertical"></div>
+                 <div class="vertical"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Science Student', 'Web Developer', '&amp; Java Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
